@@ -6,3 +6,6 @@ lightTest1
 
 lightTest2
 >> test about basic light features and culling
+
+lightTest3
+>> test about directional light and setOrientation
