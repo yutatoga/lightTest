@@ -9,3 +9,6 @@ lightTest2
 
 lightTest3
 >> test about directional light and setOrientation
+
+lightTest4
+>> test to compare three light types which are point light, spot light, and directional light
