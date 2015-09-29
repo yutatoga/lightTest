@@ -12,3 +12,6 @@ lightTest3
 
 lightTest4
 >> test to compare three light types which are point light, spot light, and directional light
+
+lightTest5
+>> test about the balance between diffuse light, specular light, and ambient light and check how it looks with different resolution of sphere. each value can be changed with GUI
