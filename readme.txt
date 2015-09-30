@@ -15,3 +15,6 @@ lightTest4
 
 lightTest5
 >> test about the balance between diffuse light, specular light, and ambient light and check how it looks with different resolution of sphere. each value can be changed with GUI
+
+lightTest6
+>> test about attenuation of light and you can change each attenuation factor which are constant, linear, and quadratic with GUI
