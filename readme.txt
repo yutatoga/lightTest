@@ -18,3 +18,6 @@ lightTest5
 
 lightTest6
 >> test about attenuation of light and you can change each attenuation factor which are constant, linear, and quadratic with GUI
+
+lightTest7
+>> test about lighting for 3d model which include plane type model, non-plane type model and low polygon model. you can check smoothLighting and you can turn on/off with GUI.
