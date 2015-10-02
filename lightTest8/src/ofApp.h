@@ -51,7 +51,7 @@ public:
     ofSpherePrimitive sphere;
     
     // box
-    // comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter shound be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
+    // comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter should be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
     // ofBoxPrimitive box;
     
     // light

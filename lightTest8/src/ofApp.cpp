@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(0, 0, 0);
-    // comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter shound be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
+    // comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter should be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
     // ofSetFullscreen(true);
     
     // gui
@@ -22,7 +22,7 @@ void ofApp::setup(){
     panel.add(sphereRadius.set("sphereRadius", 30, 1, 100));
     panel.add(sphereResolution.set("sphereResolution", 10, 2, 30));
     // - box
-    /* comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter shound be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
+    /* comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter should be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
      panel.add(boxSize.set("boxSize", ofVec3f(60, 60, 60), ofVec3f(1, 1, 1), ofVec3f(500, 500, 500)));
      panel.add(boxResolution.set("boxResolution", 30, 1, 100));
      panel.add(boxColor.set("boxColor", ofColor::red, ofColor::black, ofColor::white));
@@ -51,7 +51,7 @@ void ofApp::setup(){
     sphere.set(sphereRadius, sphereResolution);
     
     // box
-    /* comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter shound be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
+    /* comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter should be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
      box.setPosition(ofVec3f(0, 120, 0));
      box.set(boxSize->x, boxSize->y, boxSize->z);
      box.setResolution(boxResolution);
@@ -76,7 +76,7 @@ void ofApp::update(){
     sphere.set(sphereRadius, sphereResolution);
     
     // box
-    /* comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter shound be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
+    /* comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter should be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
      box.set(boxSize->x, boxSize->y, boxSize->z);
      box.setResolution(boxResolution);
      box.rotate(1, ofVec3f(0, 1, 0));
@@ -93,7 +93,7 @@ void ofApp::draw(){
                     glDisable(GL_COLOR_MATERIAL);
                     material.begin();{
                         sphere.draw();
-                        /* comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter shound be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
+                        /* comment out the code to check glEnable(GL_COLOR_MATERIAL) because of bug: every material parameter should be overwritten by ofSetColor(boxColor) on line 98 in ofApp.cpp)
                          glEnable(GL_COLOR_MATERIAL);
                          ofSetColor(boxColor);
                          box.draw();
