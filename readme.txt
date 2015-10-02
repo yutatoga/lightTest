@@ -20,7 +20,7 @@ lightTest6
 >> test about attenuation of light and you can change each attenuation factor which are constant, linear, and quadratic with GUI
 
 lightTest7
->> test about lighting for 3d model which include plane type model, non-plane type model and low polygon model. you can check smoothLighting and you can turn on/off with GUI.
+>> test about lighting for 3d model which include plane type model, non-plane type model and low polygon model. You can check smoothLighting and separateSpecularLight, and you can enable/disable both of them with GUI.
 
 lightTest8
 >> test about specular color, diffuse color,and ambient color for light VS specular color, diffuse color,and ambient color for material(I found a bug about glEnable(GL_COLOR_MATERIAL), see line 98 in ofApp.cpp to check about this and I commented out all code about it) Git issue about this is here https://github.com/yutatoga/lightTest/issues/1

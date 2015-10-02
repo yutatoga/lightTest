@@ -36,6 +36,7 @@ class ofApp : public ofBaseApp{
     ofParameter<ofFloatColor> diffuseColor;
     ofParameter<ofFloatColor> ambientColor;
     ofParameter<bool> enableSmoothLighting;
+    ofParameter<bool> enableSeparateSpecularLight;
     
     // model
     ofxAssimpModelLoader models[MODEL_NUMBER];

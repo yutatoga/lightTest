@@ -28,6 +28,7 @@ void ofApp::setup(){
     panel.add(diffuseColor.set("diffuseColor", ofFloatColor(0.0, 1.0, 0.0), ofFloatColor(0.0, 0.0, 0.0), ofFloatColor(1.0, 1.0, 1.0)));
     panel.add(ambientColor.set("ambientColor", ofFloatColor(0.0, 0.0, 1.0), ofFloatColor(0.0, 0.0, 0.0), ofFloatColor(1.0, 1.0, 1.0)));
     panel.add(enableSmoothLighting.set("enableSmoothLighting", true));
+    panel.add(enableSeparateSpecularLight.set("enableSeparateSpecularLight", false));
     panel.loadFromFile("settings.xml");
     
     // model
@@ -69,6 +70,9 @@ void ofApp::draw(){
         camera.begin();{
             ofEnableLighting();{
                 light.enable();{
+                    if (enableSeparateSpecularLight) {
+                        ofEnableSeparateSpecularLight();
+                    }
                     // light
                     light.draw();
                     
@@ -81,6 +85,9 @@ void ofApp::draw(){
                                 models[i].drawFaces();
                             }
                         }
+                    }
+                    if (enableSeparateSpecularLight) {
+                        ofDisableSeparateSpecularLight();
                     }
                 }light.disable();
             }ofDisableLighting();
